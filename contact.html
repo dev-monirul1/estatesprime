@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | EstatesPrime</title>
+    <meta name="description" content="Get in touch with EstatesPrime for property inquiries and viewing requests.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="topbar">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                <div>
+                    <span class="me-3"><i class="fa-solid fa-envelope me-2"></i>hello@estatesprime.com</span>
+                    <span><i class="fa-solid fa-phone me-2"></i>+1 (555) 234-9876</span>
+                </div>
+                <div class="d-flex align-items-center gap-3 social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Login">Login</a>
+                    <a href="#" aria-label="Register" onclick="alert('This is a demo feature.'); return false;">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Estates<span>Prime</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="properties.html">Properties</a></li>
+                    <li class="nav-item"><a class="nav-link" href="agents.html">Agents</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+                <a href="#" class="btn btn-primary" onclick="alert('This is just a demo add listing form.'); return false;">Add Listing</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-banner">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                </ol>
+            </nav>
+            <h1>Contact us</h1>
+        </div>
+    </header>
+
+    <main class="contact-section">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-3">
+                    <div class="info-card h-100 text-center">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h4>Address</h4>
+                        <p>350 Market Street,<br>San Francisco, CA</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="info-card h-100 text-center">
+                        <i class="fa-solid fa-phone"></i>
+                        <h4>Phone</h4>
+                        <p>+1 (555) 234-9876</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="info-card h-100 text-center">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>hello@estatesprime.com</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="info-card h-100 text-center">
+                        <i class="fa-solid fa-clock"></i>
+                        <h4>Office Hours</h4>
+                        <p>Mon - Sat<br>9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-7">
+                    <div class="contact-form">
+                        <h3 class="mb-4">Send us a message</h3>
+                        <form id="contactForm" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="contactName" class="form-label">Name</label>
+                                    <input type="text" id="contactName" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="contactEmail" class="form-label">Email</label>
+                                    <input type="email" id="contactEmail" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="contactPhone" class="form-label">Phone</label>
+                                    <input type="tel" id="contactPhone" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="contactLocation" class="form-label">Preferred Location</label>
+                                    <input type="text" id="contactLocation" class="form-control">
+                                </div>
+                                <div class="col-12">
+                                    <label for="contactSubject" class="form-label">Subject</label>
+                                    <input type="text" id="contactSubject" class="form-control" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="contactMessage" class="form-label">Message</label>
+                                    <textarea id="contactMessage" rows="5" class="form-control" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Submit Message</button>
+                                </div>
+                                <div class="col-12">
+                                    <div id="contactFormMessage" class="form-message" aria-live="polite"></div>
+                                </div>
+                            </div>
+                        </form>
+                        <p class="required-note">This is a front-end demo form and does not actually send emails.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="map-wrapper">
+                        <iframe class="map-frame" src="https://www.google.com/maps?q=San%20Francisco%20Market%20Street&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Office location map"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <h5>EstatesPrime</h5>
+                    <p>Your trusted real estate partner for homes, investments, and premium commercial opportunities.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="properties.html">Properties</a></li>
+                        <li><a href="agents.html">Agents</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact</h5>
+                    <p>350 Market Street<br>San Francisco, CA<br>hello@estatesprime.com<br>+1 (555) 234-9876</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Follow Us</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© <span id="currentYear"></span> EstatesPrime. All rights reserved.</span>
+                <span class="d-block mt-2">Date &amp; time: <time id="liveClock"></time></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
