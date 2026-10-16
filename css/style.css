@@ -778,3 +778,136 @@ p {
         height: 250px;
     }
 }
+
+@media (max-width: 575.98px) {
+    .navbar-brand {
+        font-size: clamp(1.3rem, 6vw, 1.65rem);
+        letter-spacing: 0.02rem;
+        margin-right: 0.5rem;
+    }
+
+    .navbar-toggler {
+        min-width: 44px;
+        min-height: 44px;
+        padding: 0.4rem 0.55rem;
+    }
+
+    .section-title {
+        font-size: clamp(1.7rem, 7vw, 2rem);
+    }
+
+    .page-banner {
+        padding: clamp(3rem, 10vw, 4.5rem) 0;
+    }
+
+    .page-banner h1 {
+        font-size: clamp(2rem, 8vw, 3rem);
+        overflow-wrap: anywhere;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(2rem, 8.5vw, 3.1rem);
+    }
+
+    .hero-actions .btn {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .search-panel,
+    .property-summary,
+    .booking-form,
+    .contact-form,
+    .sidebar-box,
+    .newsletter-box {
+        padding: clamp(1rem, 4vw, 1.4rem);
+    }
+
+    .property-card .card-img-top {
+        height: clamp(12rem, 65vw, 16rem);
+    }
+
+    .property-meta {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 0.5rem 1rem;
+    }
+
+    .property-meta span {
+        flex: 0 1 auto;
+    }
+
+    .detail-meta {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.65rem;
+    }
+
+    .detail-meta div {
+        padding: 0.75rem;
+        overflow-wrap: anywhere;
+    }
+
+    .detail-price {
+        font-size: clamp(1.7rem, 7vw, 2.3rem);
+        overflow-wrap: anywhere;
+    }
+
+    .gallery-main {
+        height: clamp(15rem, 72vw, 23.75rem);
+    }
+
+    .thumbnail-row {
+        gap: 0.55rem;
+    }
+
+    .thumbnail {
+        width: clamp(4.5rem, 22vw, 6.75rem);
+        height: clamp(3.5rem, 16vw, 5rem);
+    }
+
+    .map-frame {
+        min-height: clamp(18rem, 65vw, 30rem);
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+        gap: 0.25rem;
+    }
+}
+
+@media (max-width: 359.98px) {
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    .detail-meta {
+        grid-template-columns: 1fr;
+    }
+
+    .property-card .card-body {
+        padding: 1.1rem;
+    }
+
+    .property-card .card-body > .d-flex {
+        align-items: flex-start !important;
+        flex-direction: column;
+    }
+
+    .property-card .card-title {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 767.98px) and (orientation: landscape) and (max-height: 500px) {
+    .hero-section {
+        min-height: auto;
+    }
+
+    .hero-content {
+        padding: 2rem 0;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(2rem, 6vw, 2.8rem);
+    }
+}
